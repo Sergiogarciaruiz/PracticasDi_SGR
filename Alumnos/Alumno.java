@@ -46,7 +46,7 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return nombre + " " + apellido + ", DNI: " + dni + ", Matricula" + matricula + "€;";
+        return nombre + " " + apellido + ", DNI: " + dni + ", Matricula: " + matricula + "€;";
     }
     
 }
