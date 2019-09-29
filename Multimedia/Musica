@@ -1,0 +1,57 @@
+package multimedia;
+public class Musica extends ElementoMultimedia{
+    
+    private String  soporte;
+    private double duracion;
+    private boolean directo;
+
+    public Musica() {
+    }
+    
+
+    public Musica(String soporte, double duracion, boolean directo, String título, String autor, int year, int codigo) {
+        super(título, autor, year, codigo);
+        this.soporte = soporte;
+        this.duracion = duracion;
+        this.directo = directo;
+    }
+
+    public String getSoporte() {
+        return soporte;
+    }
+
+    public void setSoporte(String soporte) {
+        this.soporte = soporte;
+    }
+
+    public double getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(double duracion) {
+        this.duracion = duracion;
+    }
+
+    public boolean isDirecto() {
+        return directo;
+    }
+
+    public void setDirecto(boolean directo) {
+        this.directo = directo;
+    }
+
+    @Override
+    public String toString() {
+        String directox;
+        if (directo == true){
+        directox = "en directo";
+        } else {
+        directox = "no es en directo";
+        }
+        
+        return "Musica{"+ super.toString() + " soporte: " + soporte + ", duracion: " + duracion + ", " + directox + '}';
+    }
+    
+    
+    
+}
